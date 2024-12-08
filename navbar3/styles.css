@@ -80,11 +80,6 @@ body, ul {
   
   /* Media Queries for Mobile Screens */
   @media screen and (max-width: 768px) {
-    .cloud-navbar {
-      flex-direction: column; /* Stack logo and nav links */
-      align-items: center;
-      gap: 10px;
-    }
   
     .nav-links {
       gap: 10px;
