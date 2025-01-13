@@ -1,0 +1,88 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 70px; /* Adjust this value based on your navbar height */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Dropdown button */
+.dropdown button {
+  background-color: #7d8996;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown button:hover {
+  background-color: #6f859c;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 138px;
+  max-height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  overflow-y: scroll; 
+  z-index: 1;
+}
+
+.top {
+  /* Position above the button */
+  bottom: 100%; /* Push the dropdown above the button */
+  left: 0; /* Align dropdown to the left of the button */
+  margin-bottom: 8px; /* Add space between button and dropdown */
+}
+.left {
+  /* Position left of the button */
+  right: 100%; /* Push the dropdown to the left of the button */
+
+}
+
+.right {
+  /* Position left of the button */
+  left: 100%; /* Push the dropdown to the left of the button */
+
+}
+
+/* Dropdown items */
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
